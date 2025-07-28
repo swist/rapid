@@ -93,7 +93,7 @@ func (g *filteredGen[V]) String() string {
 }
 
 func (g *filteredGen[V]) value(t *T) V {
-	return find(g.maybeValue, t, small)
+	return find(g.maybeValue, t, flags.filterMaxattempts)
 }
 
 func (g *filteredGen[V]) maybeValue(t *T) (V, bool) {
