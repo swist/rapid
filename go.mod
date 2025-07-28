@@ -1,3 +1,3 @@
-module pgregory.net/rapid
+module github.com/swist/rapid
 
 go 1.18
